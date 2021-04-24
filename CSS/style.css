@@ -13,22 +13,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
 
 html {
-    
-}
-
-h1 {
-    color: red;
-    font-family: "oswald", sans-serif;
     text-transform: uppercase;
 }
 
-p {
+h1 {
+    color: blue;
+    font-family: "oswald", sans-serif;
+}
+
+h3 {
+    font-family: 'Lato', sans-serif;
+}
+
+#bioHeader {
+    color: firebrick;
+}
+
+#skillsHeader {
+    color: green;
+}
+
+.content {
     color: grey;
     font-size: 24px;
     font-family: "Roboto", sans-serif;
     text-align: justify;
     line-height: normal;
     font-weight: lighter;
+    text-transform: lowercase;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.img-div {
+    background-color: lightblue;
+}
+
+.light {
+    background-color: aliceblue;
 }
 
 img {
