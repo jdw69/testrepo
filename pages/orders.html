@@ -14,5 +14,89 @@
       <a href="products.html">Products</a>
     </nav>
     <h1>Orders</h1>
+
+    <form action="">
+      <fieldset>
+        <legend>Személyes adatok</legend>
+      <div class="container">
+        <div>
+          <label for="name">Név: *</label>
+          <input id="name" name="name" type="text" placeholder="Név" required></input>
+        </div>
+        <div>
+          <label for="email">Email: *</label>
+          <input id="email" name="email" type="email" placeholder="Email cím" required></input>
+        </div>
+        <div>
+          <label for="adress">Cím: *</label>
+          <input id="adress" name="adress" type="text" placeholder="Cím" required></input>
+        </div>
+        <div>
+          <label for="comment">Üzenet:</label>
+          <textarea id="comment" name="comment" rows="5"></textarea>
+        </div>
+      </div>
+    </fieldset>
+    </form>
+
+    <form action="">
+      <fieldset>
+        <legend>Termék adatai</legend>
+        <span>Hangfal kábel</span>
+        <div>
+          <input checked id="onem" name="long" type="radio" value="1149">
+          <label for="onem">1.0 m hosszú</label>
+        </div>
+        <div>
+          <input id="twom" name="long" type="radio" value="1669">
+          <label for="twom">2.0 m hosszú</label>
+        </div>
+        <div>
+          <input id="twofivem" name="long" type="radio" value="1929">
+          <label for="twofivem">2.5 m hosszú</label>
+        </div>
+        <div>
+          <input id="threem" name="long" type="radio" value="2199">
+          <label for="threem">3.0 m hosszú</label>
+        </div>
+        <div>
+          <label for="plugs">Válassz csatlakozót:</label>
+          <select id="plugs" name="plugs">
+            <option value="banban">Banán-banán</option>
+            <option value="banvil">Banán-villás</option>
+            <option value="vilvil">Villás-villás</option>
+            <option value="vilban">Villás-banán</option>
+          </select>
+        </div>
+        <div>
+          <input type="checkbox" id="bi-wire" name="bi-wire" value="Bi-wire">
+          <label for="bi-wire"> Bi-wire kialakítás <strong>+230 €</strong></label>
+        </div>
+        <div>
+          <input type="checkbox" id="angled" name="angled" value="Angled">
+          <label for="angled"> Ferde banán csatlakozóval</label>
+        </div>
+        
+      
+      </fieldset>
+    </form>
+  
+    <form action="">
+      <fieldset>
+        <legend>Megrendelés és fizetendő összeg</legend>
+        <div>
+          <label for="quantity">Mennyiség (Min 1, max 5 pár):</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="5">
+            <input type="submit" value="Megrendelem">
+        </div>
+        <div>
+          Fizetendő <strong>1149 €</strong>
+        </div>
+      
+      </fieldset>
+    </form>
+
+
+
   </body>
 </html>
